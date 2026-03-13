@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url=https://client.wvd.microsoft.com/arm/webclient">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting to Azure Virtual Desktop</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 2rem; background: #f4f6fb; color: #1a1a1a; }
+    main { max-width: 640px; margin: auto; text-align: center; }
+    a { color: #0062c4; }
+  </style>
+  <script>
+    (function redirect() {
+      var targetUrl = 'https://client.wvd.microsoft.com/arm/webclient';
+      try {
+        window.location.replace(targetUrl);
+      } catch (error) {
+        console.error('Redirect failed:', error);
+        window.location.href = targetUrl;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Taking You to Azure Virtual Desktop…</h1>
+    <p>If you are not redirected automatically, please <a href="https://client.wvd.microsoft.com/arm/webclient">click here to open the Azure Virtual Desktop web client</a>.</p>
+  </main>
+</body>
+</html>
